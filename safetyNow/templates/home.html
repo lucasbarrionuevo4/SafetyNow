@@ -1,3 +1,5 @@
+{% load static %}
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +8,25 @@
     <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
 </head>
 <body>
-    <div class="home-container">
-        <h1>Bienvenido a SafetyNow</h1>
-        <p>Esta es la interfaz de usuario después de un inicio de sesión exitoso.</p>
+    <div class="container">
+        <h1>Bienvenido a la Página Principal</h1>
+        
+        <div class="menu">
+            <h2>Menú de Retirar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis, libero et ultricies elementum.</p>
+        </div>
+        
+        <div class="menu">
+            <h2>Menú de Consultar</h2>
+            <p>Nulla facilisi. Nulla lacinia euismod nisi, ac ultricies lectus tincidunt et.</p>
+        </div>
+        
+        <div class="menu">
+            <h2>Opción para Salir de la Sesión</h2>
+            <p>Proin gravida, risus at rutrum scelerisque, libero est fermentum diam, sit amet tincidunt velit purus id nunc.</p>
+        </div>
+        
+        <a href="#">Cerrar sesión</a>
     </div>
 </body>
 </html>

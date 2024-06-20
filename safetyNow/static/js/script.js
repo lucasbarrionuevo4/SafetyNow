@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     formData.append('username', username);
     formData.append('password', password);
 
-    fetch('/', {
+    fetch('/myapp/urls/', {
         method: 'POST',
         headers: {
             'X-CSRFToken': csrftoken  // Incluir el token CSRF
@@ -18,10 +18,14 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         body: formData
        
     })
-    .then(response => response.json())
+    then(response => {
+        console.log("Respuesta del servidor:", response);
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
-            window.location.href = 'home';  // Redirige a la página de inicio si el inicio de sesión es exitoso
+            console.log("Inicio de sesión exitoso. Redirigiendo a /home/");
+            window.location.href = '/home/';  // Redirige a la página de inicio si el inicio de sesión es exitoso
         } else {
             alert('Usuario o contraseña incorrectos.');
         }
