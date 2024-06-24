@@ -1,0 +1,37 @@
+.tabla-retirar {
+    margin-top: 20px;
+}
+
+.tabla-retirar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-retirar th, .tabla-retirar td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-retirar th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tabla-retirar tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-retirar tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.tabla-retirar td a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 5px;
+}
+
+.tabla-retirar td a:hover {
+    text-decoration: underline;
+}

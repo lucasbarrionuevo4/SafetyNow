@@ -1,0 +1,132 @@
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafetyNow - Retirar</title>
+    <link rel="stylesheet" href="{% static 'css/retirar.css' %}">
+    <!-- Estilos CSS adicionales si es necesario -->
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Retirar</h1>
+        
+        <div class="tabla-retirar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Elemento</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Casco</td>
+                        <td>5</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Casco más Arnés</td>
+                        <td>3</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Guantes de Nitrilo Alto Impacto</td>
+                        <td>10</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Guantes Alto Impacto</td>
+                        <td>8</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Guantes Nylon</td>
+                        <td>15</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Gafas Oscuras</td>
+                        <td>7</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Gafas Claras</td>
+                        <td>6</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Protector Auditivo</td>
+                        <td>12</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Mentonera</td>
+                        <td>4</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Cola de Amarre</td>
+                        <td>20</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Accesorios</td>
+                        <td>30</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <a href="{% url 'home' %}">Volver a la página principal</a>
+    </div>
+</body>
+</html>

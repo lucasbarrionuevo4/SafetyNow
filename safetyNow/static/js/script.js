@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     formData.append('username', username);
     formData.append('password', password);
 
-    fetch('/myapp/urls/', {
+    fetch('', {
         method: 'POST',
         headers: {
             'X-CSRFToken': csrftoken  // Incluir el token CSRF
@@ -18,7 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         body: formData
        
     })
-    then(response => {
+    .then(response => {
         console.log("Respuesta del servidor:", response);
         return response.json();
     })
@@ -34,3 +34,4 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         console.error('Error:', error);
     });
 });
+

@@ -13,20 +13,20 @@
         
         <div class="menu">
             <h2>Menú de Retirar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis, libero et ultricies elementum.</p>
+            <p>Aca retiras tu EPP</p>
+            <a href="{% url 'retirar' %}">Ir a Retirar</a>
         </div>
         
         <div class="menu">
             <h2>Menú de Consultar</h2>
-            <p>Nulla facilisi. Nulla lacinia euismod nisi, ac ultricies lectus tincidunt et.</p>
+            <p>Acá podes realizar consultas sobre tu EPP</p>
+            <a href="{% url 'consultar' %}">Ir a Consultar</a>
         </div>
         
         <div class="menu">
             <h2>Opción para Salir de la Sesión</h2>
-            <p>Proin gravida, risus at rutrum scelerisque, libero est fermentum diam, sit amet tincidunt velit purus id nunc.</p>
+            <a href="{% url 'logout' %}">Cerrar sesión</a>
         </div>
-        
-        <a href="#">Cerrar sesión</a>
     </div>
 </body>
 </html>
