@@ -34,3 +34,6 @@ def consultar(request):
 
 def logout_view(request):
     return redirect('/')
+
+def info(request):
+    return render(request, 'info.html')
